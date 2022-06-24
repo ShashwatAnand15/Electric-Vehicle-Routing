@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    padding: 25px;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.1), rgba(0,0,255, 0.1)),url(background4.png);
+    background-size: cover;
+    background-position: center;
+}
+ 
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    }
+  
+h1 {
+    align-items: center;
+    /* margin-top: 250px; */
+    text-align:center;
+    margin-top: 100px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 2.5em;
+    color: rgb(241, 69, 69);
+    }
+.navbar ul{
+   position: absolute;
+   display:flex;
+   flex-direction: row;
+   justify-content: space-around;
+   list-style:none;
+   width:90%;
+   background-color: rgb(0, 0, 0);
+   padding:20px;
+}
+.navbar ul li a {
+    margin: 20%;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.container{
+    text-align: center;
+    margin-top: 200px;
+
+}
+.container2{
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px;
+    margin-top: 50px;
+    font-size: large;
+    font-weight:500;
+    background-color: linear-gradient(to right, rgba(255, 0, 0, 0.25), rgba(0,0,255, 0.25));
+    color: #fff;
+
+}
+.container3{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px;
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight:500;
+    background-color: linear-gradient(to right, rgba(255, 0, 0, 0.25), rgba(0,0,255, 0.25));
+    color: rgb(23, 238, 227);
+
+}
+
+button {
+    
+    background-color: #40a844; /* Green */
+    color: white;
+    margin-top: 25px;
+    padding: 15px 32px;
+    border-radius: 0.5em;
+    /* text-align: center; */
+    text-decoration: none;
+    font-size: 35px;
+    /* align-items: center; */
+  }
+  form{
+      text-align: center;
+      margin-top: 50px;
+  }

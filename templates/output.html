@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vechicle Routing</title>
+    <link rel = "stylesheet" type="text/css" href="{{url_for('static', filename ='style.css')}}">
+
+</head>
+
+<body>
+
+    <div class="banner">
+        <div class="navbar">
+            <ul>
+                <li><a href="{{url_for('home')}}">Home</a></li>
+                <li><a href="{{url_for('start')}}">Start</a></li>
+                <li><a href="{{url_for('start')}}">Result</a></li>
+                <li><a href="{{url_for('about')}}">About</a></li>
+            </ul>
+           </div>
+         <h1> Electric Vehicle Routing </h1>
+        <br>
+        <div class = "container3">
+            Result
+        </div>
+         <div class = "container2">
+            {% for item in output_text %}
+            Vehicles: {{ item[0] }}
+            <br>
+            Heuristic Underestimate (Distance): {{ item[1] }}m
+            <br>
+            Heuristic Underestimate (Time): {{ item[2] }}
+            <br>
+            Heuristic Route: {{ item[3] }}
+            <br>
+            Optimal Schedule/Route: {{ item[4][0] }}
+            <br>
+            Optimal Time: {{ item[4][1] }}
+            <br>
+            <br>
+            {% endfor %}
+         </div>
+        
+        </div>
+       
+        
+
+
+</body>
+
+</html>

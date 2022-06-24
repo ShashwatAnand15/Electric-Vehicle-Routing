@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vechicle Routing</title>
+    <link rel = "stylesheet" type="text/css" href="{{url_for('static', filename ='style.css')}}">
+
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <ul>
+                <li><a href="{{url_for('home')}}">Home</a></li>
+                <li><a href="{{url_for('start')}}">Start</a></li>
+                <li><a href="{{url_for('start')}}">Result</a></li>
+                <li><a href="{{url_for('about')}}">About</a></li>
+            </ul>
+           </div>
+         <h1> Electric Vehicle Routing </h1>
+         <p> Please provide your input in the following format.
+            <br><br> All values provided in a single line must be separated by a single space.
+            <br><br>First line should contain the number of stations (n), the number of connected roads (any one direction) and the number of electric vehicles (k).
+            <br><br>Second line should contain the time period used to discretize time. 1s is a good place to start. Lesser values yield more accurate results, but tend to be more prone to errors.
+            <br><br>Follow this with n lines describing the roads, each containing the source, the destination, and the distance between, in order.
+            <br><br>Lastly, enter k pairs of lines describing the vehicles, the first line of each containing the source and destination, in order, and the second, the initial battery charge, the charging rate,<br> the discharging rate, the maximum battery capacity, and the average speed of the vehicle, in order.
+            
+            
+            
+        </p>
+
+         <form action="{{ url_for('output') }}" method='post'>
+            <textarea name = "text1" rows="15" cols="75">
+            </textarea>
+            <center> 
+                <button type="submit">Submit</button>
+            </center>
+            
+        </form>
+        </div>
+
+
+</body>
+
+</html>
